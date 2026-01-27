@@ -1,8 +1,46 @@
-# damonvox
+<div align="center">
 
-A digital portfolio created by **Damon Vox** for **Damon Vox**. 
+<img width="1200" height="475" alt="Damon Vox Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 
-## Installation
+# ⚡ DAMON VOX // NEON LENS ⚡
+
+**Digital Portfolio • Street Photography • Los Santos Street Culture**
+
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+---
+
+<p align="center">
+  <img src="https://r2.fivemanage.com/image/0LYRfd3hB7v8.png" width="300" style="border-radius: 20px; border: 4px solid #fff; box-shadow: 10px 10px 0px #000;" />
+</p>
+
+### "What's up n' shit!"
+
+This is the official digital home of **Damon Vox**. A high-octane, neon-inspired photography portfolio featuring vibrant aesthetics, interactive gallery elements, and the raw chaos of street life.
+
+</div>
+
+## 📸 Key Features
+
+- **Neon Aesthetic**: A dark-mode first design inspired by late-night street photography.
+- **Interactive Gallery**: Smooth transitions and hover effects using Framer Motion.
+- **Responsive Design**: Optimized for both desktop and mobile viewing.
+- **Damon Vox's Vision**: Showcasing shots from the streets of Los Santos.
+
+## 🚀 Tech Stack
+
+- **Framework**: Vite + React
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Deployment**: GitHub Pages (Custom Domain: `damonvox.xyz`)
+
+---
+
+## 🛠️ Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -15,16 +53,30 @@ A digital portfolio created by **Damon Vox** for **Damon Vox**.
    npm install
    ```
 
-3. **Configure Environment:**
-   Update `.env.local` with your `GEMINI_API_KEY`.
+3. **Environment Setup:**
+   Create a `.env.local` file and add your `GEMINI_API_KEY`:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
 
-4. **Run local development:**
+4. **Run Local Development:**
    ```bash
    npm run dev
    ```
 
-5. **Build for deployment:**
+5. **Build for Production:**
    ```bash
    npm run build
    ```
-   *Note: The project is configured to deploy from the `/docs` folder on the `main` branch.*
+   *The build output is automatically directed to the `/docs` folder for GitHub Pages deployment.*
+
+---
+
+<div align="center">
+
+### Supported By
+<img src="https://r2.fivemanage.com/image/DKJaqhxq6JuY.png" width="80" alt="Glizzy Logo" /> &nbsp;&nbsp;&nbsp; <img src="https://r2.fivemanage.com/image/vh3Twf9KfZH6.png" width="200" alt="Binx Productions Logo" />
+
+**Created by Damon Vox for Damon Vox.**
+
+</div>
