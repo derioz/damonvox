@@ -42,29 +42,32 @@ const Backstory: React.FC = () => {
                     <section className="relative">
                         <div className="absolute -left-12 top-0 text-primary/10 text-9xl font-display select-none">I</div>
                         <h2 className="text-3xl font-display font-bold text-primary mb-8 uppercase tracking-widest border-b-2 border-primary/20 pb-2 inline-block">
-                            Always Smiling: Part I
+                            Always Smiling: Part I – The Mask
                         </h2>
                         <div className="space-y-6 text-xl leading-relaxed text-zinc-400 font-light">
                             <p>
-                                Damon Vox is one of the most recognizable faces in Los Santos — well, not his actual face. The bright yellow emoji mask, permanently smiling and always shaded by black sunglasses, has become his signature look. He's known citywide as a top tier photographer — events, weddings, street shoots, crime scenes, you name it. Everyone knows Smiley.
+                                Damon Vox is one of the most recognizable figures in Los Santos. Not because of his face, but because of the bright yellow emoji mask that never stops smiling. Black sunglasses. Permanent grin. A look so iconic that most people forget there is a real person underneath it.
                             </p>
                             <p>
-                                What people don’t know is that Damon’s mask isn’t just a gimmick — it’s permanent, medically installed. It wasn’t for clout. It was a last resort.
+                                He is known citywide as an elite photographer. Events, weddings, street shoots, crime scenes. If something happens in Los Santos, there is a good chance Damon was there, quietly documenting it from behind the lens.
                             </p>
                             <p>
-                                Years ago, Damon volunteered for a cutting-edge neuroscience study aimed at treating long term emotional suppression disorders. The twist? The procedure used an experimental neural interface combined with facial prosthetics to “lock in” a consistent external emotion. Damon, always the optimist on the surface, chose happiness.
+                                What most people do not know is that the mask is not a gimmick. It is permanent.
+                            </p>
+                            <p>
+                                Years ago, Damon volunteered for an experimental neuroscience program designed to treat long-term emotional suppression. The procedure combined a neural interface with advanced facial prosthetics, meant to stabilize emotional output by locking a consistent external expression. Damon chose happiness. He did not fully understand the cost.
                             </p>
                             <p className="bg-primary/5 p-6 rounded-xl border-l-4 border-primary italic text-zinc-300">
-                                He didn’t read the fine print.
+                                At first, the side effects were subtle. Emotional numbness. Disassociation. Sleepless nights.
                             </p>
                             <p>
-                                The side effects were subtle at first: numbness, disassociation, sleepless nights. Over time, Damon began to feel less and less — not just sadness, but joy, empathy, even fear. His emotions didn’t go away… they got buried. Compressed beneath layers of tech and trauma until they no longer had a clear way out.
+                                Over time, it worsened. Damon did not just lose sadness, he lost joy, fear, and empathy. His emotions did not disappear. They were buried beneath layers of technology and unresolved trauma.
                             </p>
                             <p>
-                                Now he smiles on the outside every hour of every day. But inside, he feels like a ghost — drifting through life with memories that no longer sting, and victories that no longer satisfy. The only thing that keeps him grounded is photography. Through the lens, he can still see emotion, even if he can’t always feel it himself.
+                                Now Damon smiles every second of every day, even when nothing inside him responds.
                             </p>
                             <p>
-                                Some say Damon’s just eccentric. Some think the mask is a branding move. Few know the truth: it’s both a prison and a crutch. And maybe, just maybe, he’s still hoping that one perfect photo — one pure, undistorted human moment — might snap something loose in his head and let him feel again.
+                                Photography became his anchor. Through the camera, he could still recognize emotion in others, even when he struggled to feel it himself.
                             </p>
                         </div>
                     </section>
@@ -73,41 +76,97 @@ const Backstory: React.FC = () => {
                     <section className="relative">
                         <div className="absolute -left-12 top-0 text-primary/10 text-9xl font-display select-none">II</div>
                         <h2 className="text-3xl font-display font-bold text-primary mb-8 uppercase tracking-widest border-b-2 border-primary/20 pb-2 inline-block">
-                            Always Smiling: Part II
+                            Always Smiling: Part II – The Diamond Days
                         </h2>
                         <div className="space-y-6 text-xl leading-relaxed text-zinc-400 font-light">
                             <p>
-                                When Damon Vox first arrived in Los Santos, he didn’t feel like a man. He felt like a malfunction — a walking mask with a camera and a vague sense of direction. The city was loud, fast, and bright, and he was a stranger wrapped in a permanent smile he couldn’t take off.
+                                When Damon arrived in Los Santos, he felt hollow and directionless. A man driven more by habit than purpose.
                             </p>
                             <p>
-                                Behind that expressionless grin was nothing but static. Fear, doubt, and emptiness all blurred together. That’s when Marianna reached out. An old acquaintance from the freelance days, Marianna knew Damon’s work. She offered him a gig: photos and video work for a close-knit group of her friends.
-                            </p>
-                            <p className="text-white font-medium border-l-4 border-white pl-6">
-                                “They're good people,” she said. “You'll like them.”
+                                That changed when an old acquaintance, Marianna, reached out and brought him into a close-knit crew. Through her, Damon met Henry and Nyx. They were loud, chaotic, and alive in a way Damon was not. The kind of people who made memories without trying.
                             </p>
                             <p>
-                                Damon didn’t know it at the time, but that call would change everything. Through her, he met Henry and Nyx — two magnetic souls who felt like human sunlight. Charisma, energy, chaos — but the good kind. They were the kind of people who turned a random Tuesday into a memory.
-                            </p>
-                            <p>
-                                Damon was fascinated by them. Obsessed, even. Not in a weird way — in the way someone starving for emotion clings to people who radiate it. He started documenting everything. Photos of late night get-togethers, of getaways from banks and beat-up cop cars, of laughing until it hurt.
-                            </p>
-                            <p>
-                                It was the first time in years Damon felt seen. Not for the mask, but for the man holding the camera. They didn’t just tolerate him. They celebrated him.
+                                Damon documented everything. Late nights. Heists. Laughter. For the first time since the procedure, he felt connected.
                             </p>
                             <p className="text-primary font-bold text-2xl uppercase tracking-tighter">
-                                Join us. Be a Diamond Geeza.
+                                They became family.
                             </p>
                             <p>
-                                It wasn’t just a name. It was a family. A chaotic, ridiculous, beautiful family. And for once, Damon didn’t feel like an outsider documenting life. He was finally living it.
+                                Damon joined them as a Diamond Geeza, not just as a photographer, but as one of their own. He stopped feeling like an observer and started living inside the moments he used to capture.
                             </p>
                             <p>
-                                Weeks became months. The crew made noise in every corner of the city. Pranks, heists, wild nights in rented penthouses. Damon kept snapping photos through it all. The camera became his diary. He still didn’t feel things the way others did, but around them, he didn’t have to fake it. He could just exist.
+                                Then Henry and Nyx were gone.
                             </p>
                             <p>
-                                Then came the day that shattered it all. Henry and Nyx were gone. Taken in a sudden, brutal act that Damon never saw coming. One moment they were planning a job, laughing about lunch. The next... silence.
+                                Their deaths were sudden and brutal. Damon processed the loss by freezing them in photographs he never shared and never deleted. The mask smiled. Inside, something fractured.
+                            </p>
+                        </div>
+                    </section>
+
+                    {/* Part III */}
+                    <section className="relative">
+                        <div className="absolute -left-12 top-0 text-primary/10 text-9xl font-display select-none">III</div>
+                        <h2 className="text-3xl font-display font-bold text-primary mb-8 uppercase tracking-widest border-b-2 border-primary/20 pb-2 inline-block">
+                            Always Smiling: Part III – Borrowed Homes
+                        </h2>
+                        <div className="space-y-6 text-xl leading-relaxed text-zinc-400 font-light">
+                            <p>
+                                After the loss, Damon carried on. He worked. He survived. He drifted through Los Santos with no group to call family.
+                            </p>
+                            <p>
+                                Eventually, he found belonging again when he was recruited into the Triads, alongside familiar faces from his old crew. The structure was quieter and more disciplined, but it felt like a home.
+                            </p>
+                            <p className="border-l-4 border-zinc-700 pl-6 italic">
+                                Until it wasn’t.
+                            </p>
+                            <p>
+                                Leadership vanished. The organization unraveled. The Triads disbanded without closure. Damon walked away without protest. He had learned that homes could disappear overnight.
+                            </p>
+                            <p>
+                                Not long after, the truth surfaced.
+                            </p>
+                            <p className="text-white font-bold text-2xl tracking-tighter uppercase">
+                                Henry was alive.
+                            </p>
+                            <p>
+                                He had faked his death. Nyx had survived as well, but vanished afterward, leaving no trail and no contact. Alive somewhere in the world, but unreachable.
+                            </p>
+                            <p>
+                                The grief returned, sharper and more confusing than before.
+                            </p>
+                        </div>
+                    </section>
+
+                    {/* Part IV */}
+                    <section className="relative">
+                        <div className="absolute -left-12 top-0 text-primary/10 text-9xl font-display select-none">IV</div>
+                        <h2 className="text-3xl font-display font-bold text-primary mb-8 uppercase tracking-widest border-b-2 border-primary/20 pb-2 inline-block">
+                            Always Smiling: Part IV – The Ghost and the Glizzy
+                        </h2>
+                        <div className="space-y-6 text-xl leading-relaxed text-zinc-400 font-light">
+                            <p>
+                                Before the truth could settle, the IAA recruited them. An off-the-books operation under a name that did not exist. [REDACTED]. A unit built for surveillance, intelligence, and quiet work.
+                            </p>
+                            <p>
+                                Damon fit perfectly. Seeing everything without being seen was already his life.
+                            </p>
+                            <p>
+                                Around the same time, he opened Damon’s Glizzy’s. A loud, ridiculous business selling strange and over-the-top hot dogs. Bright colors. Weird combinations. Food meant to make people laugh.
+                            </p>
+                            <p className="bg-zinc-800 p-6 rounded-xl border-l-4 border-primary">
+                                It was not a front. It was an anchor.
+                            </p>
+                            <p>
+                                Behind the counter, Damon was not an asset or a ghost or a man buried in classified work. He was just Smiley, serving glizzys and snapping photos of people enjoying something simple.
+                            </p>
+                            <p>
+                                Now Damon lives between worlds. Photographer. Business owner. Intelligence asset. A man with a permanent smile and emotions locked behind technology and trauma.
+                            </p>
+                            <p>
+                                He no longer looks for forever homes. He builds places that last long enough to matter.
                             </p>
                             <p className="font-display text-2xl text-white italic">
-                                The kind of silence Damon had heard once before. But this time, it wasn’t a building on fire. It was his heart, cracking beneath a mask that couldn’t cry.
+                                And he documents everything. Always smiling.
                             </p>
                         </div>
                     </section>
