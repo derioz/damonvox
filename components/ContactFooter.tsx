@@ -1,5 +1,5 @@
 import React from 'react';
-import { BINX_LOGO } from '../constants';
+import { BINX_LOGO, PORTRAIT_IMG } from '../constants';
 
 const ContactFooter: React.FC = () => {
   return (
@@ -48,30 +48,46 @@ const ContactFooter: React.FC = () => {
           {/* Created by Damon Pill */}
           <button
             onClick={() => {
+              // Neural Overload Emoji Cascade
+              const emojis = ['😎', '📸', '⚡', '🏙️', '✨', '💎'];
+              for (let i = 0; i < 30; i++) {
+                const emoji = document.createElement('div');
+                emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+                emoji.style.position = 'fixed';
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.top = '-50px';
+                emoji.style.fontSize = Math.random() * 20 + 20 + 'px';
+                emoji.style.zIndex = '9999';
+                emoji.style.transition = 'all ' + (Math.random() * 2 + 1) + 's linear';
+                emoji.style.pointerEvents = 'none';
+                document.body.appendChild(emoji);
+
+                setTimeout(() => {
+                  emoji.style.transform = `translateY(110vh) rotate(${Math.random() * 360}deg)`;
+                  emoji.style.opacity = '0';
+                }, 100);
+
+                setTimeout(() => {
+                  emoji.remove();
+                }, 3000);
+              }
+
+              // Subtle site-wide pulse
               const body = document.body;
-              body.style.filter = 'invert(1) hue-rotate(180deg)';
-              body.style.transition = 'all 0.1s';
+              body.style.transition = 'filter 0.3s';
+              body.style.filter = 'brightness(1.5) saturate(1.5)';
               setTimeout(() => {
                 body.style.filter = 'none';
-              }, 200);
-
-              // Second glitch
-              setTimeout(() => {
-                body.style.filter = 'skew(5deg) brightness(1.5)';
-                setTimeout(() => {
-                  body.style.filter = 'none';
-                }, 150);
-              }, 400);
+              }, 300);
             }}
             className="group relative flex items-center gap-3 bg-zinc-900 border-2 border-zinc-700 px-6 py-2.5 rounded-full hover:border-primary hover:bg-black transition-all active:scale-95 hover:shadow-glow"
           >
             <div className="w-8 h-8 rounded-full border-2 border-zinc-600 group-hover:border-primary overflow-hidden transition-colors">
-              <img src={BINX_LOGO} alt="Damon" className="w-full h-full object-cover scale-125" />
+              <img src={PORTRAIT_IMG} alt="Damon" className="w-full h-full object-cover scale-110" />
             </div>
             <span className="font-display text-sm uppercase tracking-tighter group-hover:text-primary transition-colors">
               Created by <span className="text-primary group-hover:text-white">Damon</span>
             </span>
-            <div className="absolute inset-0 bg-primary/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </button>
         </div>
       </footer>

@@ -5,22 +5,6 @@ import { PORTRAIT_IMG } from '../constants';
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden">
-      {/* Neural Glitch Entrance */}
-      <Link
-        to="/backstory"
-        className="absolute top-24 right-10 z-30 group cursor-pointer"
-        title="Access Neural Records"
-      >
-        <div className="relative">
-          <span className="material-symbols-outlined text-zinc-300 dark:text-zinc-600 group-hover:text-primary transition-colors duration-300 transform group-hover:scale-110 animate-pulse">
-            sensors
-          </span>
-          <div className="absolute top-0 left-0 w-full h-full bg-primary/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity animate-wiggle"></div>
-        </div>
-        <span className="absolute right-full mr-2 top-0 whitespace-nowrap text-[10px] font-mono text-zinc-500 opacity-0 group-hover:opacity-100 transition-opacity tracking-widest uppercase">
-          Neural_Link: Established
-        </span>
-      </Link>
       {/* Background Blobs */}
       <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[80px] animate-float opacity-60"></div>
       <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-orange-400/20 rounded-full blur-[80px] animate-float opacity-60" style={{ animationDelay: '2s' }}></div>
@@ -73,10 +57,14 @@ const Hero: React.FC = () => {
               Forget the polished studio stuff. I'm out here chasing neon lights, street food, and the weird chaos of Los Santos. If it's real, I'm shooting it.
             </p>
 
-            <div className="flex gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4">
               <a href="#gallery" className="bg-black text-white dark:bg-white dark:text-black px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform shadow-hard">
                 See the Shots
               </a>
+              <Link to="/backstory" className="bg-zinc-100 text-black dark:bg-zinc-800 dark:text-white px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform border-2 border-black shadow-hard group relative overflow-hidden">
+                <span className="relative z-10">Backstory</span>
+                <div className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform"></div>
+              </Link>
               <a href="#book" className="bg-primary text-black px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform border-2 border-black shadow-hard">
                 Let's Link
               </a>
