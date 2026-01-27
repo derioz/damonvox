@@ -12,7 +12,7 @@
 ---
 
 <p align="center">
-  <img src="https://r2.fivemanage.com/image/0LYRfd3hB7v8.png" width="300" style="border-radius: 20px; border: 4px solid #fff; box-shadow: 10px 10px 0px #000;" />
+  <img src="./public/assets/img/hero-portrait.png" width="300" style="border-radius: 20px; border: 4px solid #fff; box-shadow: 10px 10px 0px #000;" />
 </p>
 
 ### "What's up n' shit!"
@@ -73,7 +73,7 @@ This is the official digital home of **Damon Vox**. A high-octane photography po
 <div align="center">
 
 ### Supported By
-<img src="https://r2.fivemanage.com/image/DKJaqhxq6JuY.png" width="80" alt="Glizzy Logo" /> &nbsp;&nbsp;&nbsp; <img src="https://r2.fivemanage.com/image/vh3Twf9KfZH6.png" width="200" alt="Binx Productions Logo" />
+<img src="./public/assets/img/glizzy-logo.png" width="80" alt="Glizzy Logo" /> &nbsp;&nbsp;&nbsp; <img src="./public/assets/img/binx-logo.png" width="200" alt="Binx Productions Logo" />
 
 **Created by Damon Vox for Damon Vox.**
 

@@ -1,13 +1,13 @@
 import { Photo } from './types';
 
 // Updated Hero Portrait
-export const PORTRAIT_IMG = "https://r2.fivemanage.com/image/0LYRfd3hB7v8.png";
+export const PORTRAIT_IMG = "/assets/img/hero-portrait.png";
 
 // New Glizzy Logo
-export const GLIZZY_LOGO = "https://r2.fivemanage.com/image/DKJaqhxq6JuY.png";
+export const GLIZZY_LOGO = "/assets/img/glizzy-logo.png";
 
 // Binx Productions Logo
-export const BINX_LOGO = "https://r2.fivemanage.com/image/vh3Twf9KfZH6.png";
+export const BINX_LOGO = "/assets/img/binx-logo.png";
 
 export const GALLERY_PHOTOS: Photo[] = [
   {
