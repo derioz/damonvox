@@ -16,8 +16,8 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Main Title Stack */}
-        <h1 className="text-6xl md:text-[8rem] font-display font-bold leading-[0.9] text-zinc-900 dark:text-white drop-shadow-sm">
-          <span className="inline-block">DAMON</span>
+        <h1 className="text-6xl md:text-[8rem] font-display leading-[0.9] text-zinc-900 dark:text-white">
+          DAMON
           <span className="relative inline-block mx-4">
             <span className="relative z-10 text-primary transform -rotate-6 inline-block">VOX</span>
             <svg className="absolute -bottom-4 -left-2 w-[110%] h-4 text-black dark:text-white z-0" viewBox="0 0 100 10" preserveAspectRatio="none">
