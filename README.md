@@ -2,7 +2,7 @@
 
 <img width="1200" height="475" alt="Damon Vox Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 
-# ⚡ DAMON VOX // NEON LENS ⚡
+# ⚡ DAMON VOX ⚡
 
 **Digital Portfolio • Street Photography • Los Santos Street Culture**
 
@@ -19,13 +19,13 @@
 
 ### "What's up n' shit!"
 
-This is the official digital home of **Damon Vox**. A high-octane, neon-inspired photography portfolio featuring vibrant aesthetics, interactive gallery elements, and the raw chaos of street life.
+This is the official digital home of **Damon Vox**. A high-octane photography portfolio featuring vibrant aesthetics, interactive gallery elements, and the raw chaos of street life.
 
 </div>
 
 ## 📸 Key Features
 
-- **Neon Aesthetic**: A dark-mode first design inspired by late-night street photography.
+- **Urban Aesthetic**: A dark-mode first design inspired by late-night street photography.
 - **Interactive Gallery**: Smooth transitions and hover effects using Framer Motion.
 - **Responsive Design**: Optimized for both desktop and mobile viewing.
 - **Damon Vox's Vision**: Showcasing shots from the streets of Los Santos.
