@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b-2 border-transparent transition-all">
-      <div className="flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform group">
+      <Link to="/" className="flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform group no-underline decoration-transparent">
         {/* Styled Logo Icon */}
         <div className="bg-primary text-black p-1.5 rounded-lg border-2 border-black shadow-sm transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
-           <span className="material-symbols-outlined text-xl font-bold">photo_camera</span>
+          <span className="material-symbols-outlined text-xl font-bold">photo_camera</span>
         </div>
         {/* Styled Text Logo */}
         <div className="text-2xl font-display font-black text-black dark:text-white tracking-tighter leading-none">
           DAMON<span className="text-primary drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] dark:drop-shadow-none">VOX</span>
         </div>
-      </div>
+      </Link>
 
       {/* Desktop Nav */}
       <nav className="hidden md:flex space-x-2 font-bold text-sm uppercase items-center">
@@ -26,7 +27,7 @@ const Header: React.FC = () => {
       </nav>
 
       {/* Mobile Menu Button */}
-      <button 
+      <button
         className="md:hidden bg-black text-white p-2 rounded-lg"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
@@ -36,11 +37,11 @@ const Header: React.FC = () => {
       {/* Mobile Nav Overlay */}
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white dark:bg-zinc-900 border-b-4 border-black p-6 flex flex-col space-y-4 md:hidden shadow-2xl animate-float">
-           <a className="text-xl font-display font-bold text-black dark:text-white" href="#gallery" onClick={() => setIsMenuOpen(false)}>Photos</a>
-           <a className="text-xl font-display font-bold text-black dark:text-white" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-           <a className="bg-primary text-black px-4 py-3 text-center rounded-xl border-2 border-black font-bold uppercase shadow-hard" href="#book" onClick={() => setIsMenuOpen(false)}>
-             Contact Damon
-           </a>
+          <a className="text-xl font-display font-bold text-black dark:text-white" href="#gallery" onClick={() => setIsMenuOpen(false)}>Photos</a>
+          <a className="text-xl font-display font-bold text-black dark:text-white" href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+          <a className="bg-primary text-black px-4 py-3 text-center rounded-xl border-2 border-black font-bold uppercase shadow-hard" href="#book" onClick={() => setIsMenuOpen(false)}>
+            Contact Damon
+          </a>
         </div>
       )}
     </header>
