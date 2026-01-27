@@ -39,10 +39,41 @@ const ContactFooter: React.FC = () => {
         </div>
       </section>
 
-      <footer className="py-8 bg-black text-white text-center">
-        <p className="font-display text-sm tracking-widest">
-          DAMON VOX © 2024 // LOS SANTOS ORIGINAL
-        </p>
+      <footer className="py-12 bg-black text-white text-center border-t-4 border-primary/20 relative overflow-hidden">
+        <div className="container mx-auto px-6 flex flex-col items-center gap-6">
+          <p className="font-display text-sm tracking-widest opacity-60">
+            DAMON VOX © 2024 // LOS SANTOS ORIGINAL
+          </p>
+
+          {/* Created by Damon Pill */}
+          <button
+            onClick={() => {
+              const body = document.body;
+              body.style.filter = 'invert(1) hue-rotate(180deg)';
+              body.style.transition = 'all 0.1s';
+              setTimeout(() => {
+                body.style.filter = 'none';
+              }, 200);
+
+              // Second glitch
+              setTimeout(() => {
+                body.style.filter = 'skew(5deg) brightness(1.5)';
+                setTimeout(() => {
+                  body.style.filter = 'none';
+                }, 150);
+              }, 400);
+            }}
+            className="group relative flex items-center gap-3 bg-zinc-900 border-2 border-zinc-700 px-6 py-2.5 rounded-full hover:border-primary hover:bg-black transition-all active:scale-95 hover:shadow-glow"
+          >
+            <div className="w-8 h-8 rounded-full border-2 border-zinc-600 group-hover:border-primary overflow-hidden transition-colors">
+              <img src={BINX_LOGO} alt="Damon" className="w-full h-full object-cover scale-125" />
+            </div>
+            <span className="font-display text-sm uppercase tracking-tighter group-hover:text-primary transition-colors">
+              Created by <span className="text-primary group-hover:text-white">Damon</span>
+            </span>
+            <div className="absolute inset-0 bg-primary/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          </button>
+        </div>
       </footer>
     </>
   );
