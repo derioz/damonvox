@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import { PORTRAIT_IMG } from '../constants';
 
 const Hero: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden">
       {/* Background Blobs */}
@@ -58,16 +65,16 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <a href="#gallery" className="bg-black text-white dark:bg-white dark:text-black px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform shadow-hard">
+              <button onClick={() => scrollToSection('gallery')} className="bg-black text-white dark:bg-white dark:text-black px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform shadow-hard cursor-pointer">
                 See the Shots
-              </a>
+              </button>
               <Link to="/backstory" className="bg-zinc-100 text-black dark:bg-zinc-800 dark:text-white px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform border-2 border-black shadow-hard group relative overflow-hidden">
                 <span className="relative z-10">Backstory</span>
                 <div className="absolute inset-0 bg-primary/10 translate-y-full group-hover:translate-y-0 transition-transform"></div>
               </Link>
-              <a href="#book" className="bg-primary text-black px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform border-2 border-black shadow-hard">
+              <button onClick={() => scrollToSection('book')} className="bg-primary text-black px-8 py-4 rounded-xl font-bold hover:-translate-y-1 transition-transform border-2 border-black shadow-hard cursor-pointer">
                 Let's Link
-              </a>
+              </button>
             </div>
           </div>
 
