@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { PORTRAIT_IMG } from '../constants';
+
+const HERO_VIDEO = "/assets/video/hero_hover.mp4";
 
 const Hero: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleMouseEnter = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
     }
   };
 
@@ -37,15 +53,23 @@ const Hero: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
 
           {/* Portrait Side */}
-          <div className="relative group order-2 md:order-1">
+          <div
+            className="relative group order-2 md:order-1"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             {/* Sticker Background */}
             <div className="absolute inset-0 bg-primary transform rotate-6 rounded-[2rem] shadow-hard-lg group-hover:rotate-3 transition-transform duration-300"></div>
 
             <div className="relative bg-white dark:bg-zinc-800 p-2 rounded-[2rem] transform -rotate-3 group-hover:-rotate-1 transition-transform duration-300 border-4 border-black dark:border-white">
-              <img
-                alt="Damon Vox Portrait"
-                className="w-full h-auto rounded-3xl grayscale group-hover:grayscale-0 transition-all duration-300 aspect-square object-cover"
-                src={PORTRAIT_IMG}
+              <video
+                ref={videoRef}
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="w-full h-auto rounded-3xl transition-all duration-300 aspect-square object-cover"
+                src={HERO_VIDEO}
               />
 
               {/* Speech Bubble */}
